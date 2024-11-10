@@ -239,16 +239,20 @@ everything to that it jumped a bit further down but elements kept decently simil
 
 
 .intro_pic {
-    width: 10%;
-    height: 10%;
-
+    width: 10vw;
+    height: 10vw;
     min-width: 125px;
     min-height: 125px;
-
+    max-width: 200px;
+    max-height: 200px;
     position: relative;
-
+    
     border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
 }
+
 
 /*
 @media (max-width: 800px) {
