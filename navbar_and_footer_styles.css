@@ -1,0 +1,242 @@
+
+/*
+changing based on width for responsiveness
+
+
+    nav select { display: inline-block; }
+ */
+@media (max-width: 800px) {
+    .navbar_regular_links {
+        display: none;
+    }
+
+    .navbar_home, .navbar_home.visited {
+        font-size: 175%;
+    }
+
+}
+
+@media (min-width: 800px) {
+    .dropdown {
+        display: none;
+    }
+
+    .navbar_home, .navbar_home.visited {
+        font-size: 275%;
+    }
+}
+
+/*
+Navbar
+ */
+.navbar {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+
+    background: #6767e0;
+    width: 100%;
+    height: 4.75rem;
+
+    z-index: 100;
+}
+/*
+@media (max-width: 800px) {
+    .navbar {
+        height: 2.5rem;
+    }
+}*/
+
+.navbar_home, .navbar_home.visited {
+    position: relative;
+    left: 1rem;
+    font-family: 'Baloo 2';
+    color: white;
+    transition: all .15s ease-in-out;
+    display: inline-block;
+}
+
+.navbar_home:hover {
+    transform: scale(1.02) translate(-0.1rem, -0.1rem);
+    text-shadow: 0.25rem 0.25rem black;
+}
+
+.navbar_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+@media (min-width: 800px) {
+    .navbar_link_container, .navbar_regular_links {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+}
+
+.navbar_link {
+    max-width: 80%;
+    horiz-align: center;
+    margin: 0;
+    padding: 30px;
+    text-align: center;
+    font-size: 150%;
+}
+
+.navbar_link:hover {
+    transform: scale(1.02) translate(-0.05rem, -0.05rem);
+    text-shadow: 0.1rem 0.1rem black;
+}
+
+.drop_button {
+    font-family: 'Baloo 2';
+    font-size: 1.65rem;
+    position: relative;
+
+    padding-top: 1.5rem;
+    padding-right: 1rem;
+    padding-bottom: 0.5rem;
+
+    background-color: #6767e0;
+    color: white;
+
+    border: none;
+
+    cursor: pointer;
+}
+
+@media only screen and (max-device-width: 800px){
+    .drop_button {
+        padding-top: 1.6rem;
+        padding-left: 0.7rem;
+    }
+}
+
+
+/*
+dropdown
+*/
+/*
+.drop_button:hover {
+    background-color: #5757d0;
+}*/
+
+@media (max-width: 800px) {
+    .dropdown {
+        display: block;
+    }
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    margin-top: -0.66rem;
+
+
+    background-color: #6767e0;
+    box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.15);
+    z-index: 1;
+}
+
+@media only screen and (max-device-width: 800px){
+    .dropdown-content {
+        padding-top: 0.2rem;
+        padding-right: -0.6rem;
+    }
+}
+
+/*
+Footer
+ */
+
+.reg_footer {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    width: 100%;
+    height: 3rem;
+
+    background: #444460;
+    color: white;
+
+    z-index: 100;
+}
+
+/*
+@media only screen {
+    .reg_footer {
+        transform: scale(1, 0.5);
+        transform-origin: bottom;
+    }
+}*/
+
+.reg_footer_contents {
+    display: flex;
+    align-content: space-evenly;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_link {
+    display: inline-block;
+    justify-content: center;
+    padding: 0.3rem;
+    transform: scale(0.8);
+}
+
+
+
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+
+    font-family: "Baloo 2";
+    font-size: 110%;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 140px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltiptext {
+    padding: 5px;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
