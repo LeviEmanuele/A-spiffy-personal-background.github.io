@@ -1,134 +1,66 @@
-
-
-
 html {
     height: 100%;
-
-
     background-color: #dac1a6;
     background-image: url("./images/cube_colored.png");
-
-    /*
-    Graph Paper
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23a78259' fill-opacity='0.17'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-    background-size: 8%;
-
-    Triangles
-    background-color: #dac1a6;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='72' viewBox='0 0 36 72'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%238d4800' fill-opacity='0.05'%3E%3Cpath d='M2 6h12L8 18 2 6zm18 36h12l-6 12-6-12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-    background-size: 2%;
-     */
+    background-position: center;  /* Centers the background image */
+    background-size: cover;      /* Ensures the background covers the entire page */
+    background-attachment: fixed; /* Optional: Keeps the background fixed while scrolling */
 }
-
 
 body {
     min-width: 100%;
     min-height: 100%;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
+    display: flex;          /* Enables Flexbox layout */
+    flex-direction: column; /* Stacks elements vertically */
+    justify-content: center; /* Centers content vertically */
+    align-items: center;    /* Centers content horizontally */
 }
 
-/*
-body::after {
-
-    content: "";
-    width: 100%;
-    min-height: 100%;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-
-    background: url('./images/cube_BG.png');
-    opacity: 0.1;
-    z-index: -1;
-
-}
-
- */
-
-
-::selection {
-    /* Change highlight background color to black */
-    background: #41419b;
-    /* Change highlight text color to red */
-    color: #e8e8f6;
-}
-
+/* Base container for centering background elements */
 .basic_BG {
     height: 100%;
-    min-height: 100%;
-
-
-
-    overflow:hidden;
+    width: 100%;
     position: absolute;
     top: 0;
     left: 0;
+    overflow: hidden;
+    z-index: -1;  /* Ensures this stays in the background */
 }
 
-
-
-.background_hack {
+/* Container for general background image */
+.base_background {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-}
-
-.base_background {
     background-color: #dac8b5;
-
-
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: inherit;
-
-    z-index: -10;
+    z-index: -10;  /* Behind all content */
 }
 
+/* Tiled background with a low opacity */
 .tiled_background {
-
     position: absolute;
-    left: 0;
     top: 0;
+    left: 0;
     width: 100%;
-    height: inherit;
-    max-height: inherit;
-
+    height: 100%;
     background-image: url("https://image.freepik.com/free-vector/abstract-cube-pattern_1319-153.jpg");
-    /*
-
-    https://image.freepik.com/free-vector/minimal-triangle-pattern-design-pastel-colors_1017-14885.jpg
-    https://image.freepik.com/free-vector/geometric-shapes-pattern-background_1319-136.jpg
-
-    https://image.freepik.com/free-vector/abstract-pattern_1319-108.jpg
-     */
-
+    background-repeat: repeat;
     opacity: 0.06;
-    background-repeat: repeat round;
-
-
-/*    background-attachment: fixed;    */
-
-
     z-index: -1;
-
-
 }
 
-
-
-/*
-Regular links and text
- */
-
+/* Regular links and text */
 a {
     text-decoration: none;
 }
 
 .reg_link, .reg_link.visited {
     color: white;
-    transition: all .1s ease-in-out;
+    transition: all 0.1s ease-in-out;
     display: inline-block;
     font-size: 115%;
     font-family: 'Baloo 2';
@@ -144,140 +76,74 @@ a {
     line-height: 1rem;
 }
 
-/*
-@media only screen and (max-device-width: 800px){
-    .reg_text {
-        font-size: 95%;
-    }
-}
-*/
-
-
-.title_text {
-    margin: 2%;
-    line-height: 2rem
-}
-
-.intro_text {
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: center;
-    line-height: 1.5rem;
-    max-width: 65%;
-    font-size: 115%;
-}
-
-/*
-@media only screen and (max-device-width: 800px){
-    .intro_text {
-        font-size: 100%;
-    }
-}
- */
-
-
-.reg_ul_list {
-    list-style-type: none;
-    padding-left: 1rem;
-    line-height: 1.5rem;
-}
-
-.reg_sub_list_item {
-    padding-left: 8%;
-}
-
-
-/* Such a nifty condition, this last-child thing */
-li.reg_sub_list_item:not(:last-child) {
-    margin-bottom: 0.5rem;
-}
-
-
-/*
-Containers
- */
-
-.main_container {
-    z-index: 100;
-}
-
+/* Main content container */
 .reg_container {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    text-align: center;
+    align-items: center;    /* Centers vertically */
+    justify-content: center; /* Centers horizontally */
+    flex-direction: column;  /* Stacks content vertically */
+    text-align: center;      /* Centers text */
 }
 
+/* Grid container for items */
 .reg_grid_container {
     display: grid;
-
-    grid-template-columns: 1fr 1fr;
-    /* Three columns */
-    grid-template-rows: 0.75fr 0.75fr 0.75fr;
-    /* Two rows */
-
+    grid-template-columns: 1fr 1fr;  /* Two columns */
+    grid-template-rows: 0.75fr 0.75fr 0.75fr; /* Three rows */
     grid-gap: 3%;
+    justify-items: center; /* Centers grid items horizontally */
+    align-items: center;   /* Centers grid items vertically */
 }
 
+/* Each grid item */
 .reg_grid_item {
     width: 90%;
     justify-self: center;
-
-    offset-position: top;
 }
 
-
-/* Deprecated - I used this when I had buttons jumping to the page but the header was getting in the way, so this offset
-everything to that it jumped a bit further down but elements kept decently similar positioning to before
- */
-.offset_anchor {
-    padding-top: 120px;
-    margin-top: -80px;
-}
-
-
-
+/* Image styles */
 .intro_pic {
     width: 10%;
     height: 10%;
-
     min-width: 125px;
     min-height: 125px;
-
     position: relative;
-
     border-radius: 50%;
+    display: block;       /* Ensures the image behaves as a block element */
+    margin-left: auto;    /* Centers image horizontally */
+    margin-right: auto;   /* Centers image horizontally */
 }
 
-/*
-@media (max-width: 800px) {
-    .intro_pic {
-        width: 40%;
-        height: 40%;
-    }
-}
- */
-
+/* Styling for sections separating content */
 .page_line_sep {
     border-style: inset;
     width: 80%;
     border-width: 2px;
     height: 1px;
     background-color: #6767e0;
-
     z-index: 100;
 }
 
+/* Responsive adjustments for smaller screens */
+@media only screen and (max-width: 800px) {
+    .intro_pic {
+        width: 40%;
+        height: 40%; /* Makes the intro_pic larger on smaller screens */
+    }
+
+    .main_page_grid_item {
+        margin-bottom: -1rem;
+        margin-top: -1rem;
+    }
+}
+
+/* Image for small gifs with transparent background */
 .small_gif {
     padding: 0vh;
-
     border-style: solid;
     border-width: 0.3vh;
     border-radius: 20px;
-
     margin: 1vh;
-
     flex-shrink: 0.3;
 }
 
@@ -285,36 +151,13 @@ everything to that it jumped a bit further down but elements kept decently simil
     background-color: rgba(130, 174, 255, 0.59);
 }
 
-
-/* Main Page */
-
+/* Main page grid styling */
 .main_page_grid_container {
-
-/*    display: inline-grid;
-
-/*
-    grid-template-columns: 1fr;
-    /* Two columns */
-/*    grid-template-rows: 1fr 1fr 1fr;
-    /* Two rows */
-
-/*    row-gap: 4%;*/
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr; /* Two columns for larger screens */
 }
 
-
-
 .main_page_grid_item {
-    /*
-    justify-self: center;
-    display: inline-flex;
-    justify-content: center;
-
-    min-width: 30%;
-    /*
-    border-radius: 10px;
-    background-color: rgba(50, 50, 50, 0.1);
-    */
-
     font-size: 200%;
     height: min-content;
     padding-left: 8vh;
@@ -324,17 +167,9 @@ everything to that it jumped a bit further down but elements kept decently simil
     margin-bottom: 1vh;
 }
 
-@media only screen and (max-device-width: 800px) {
-    .main_page_grid_item {
-        margin-bottom: -1rem;
-        margin-top: -1rem;
-    }
-}
-
-.main_page_grid_text, .main_page_grid_text.visited {
+.main_page_grid_text {
     color: #000000;
-    transition: all .1s ease-in-out;
-
+    transition: all 0.1s ease-in-out;
     line-height: 2rem;
 }
 
@@ -342,12 +177,9 @@ everything to that it jumped a bit further down but elements kept decently simil
     color: white;
     transform: scale(1.03) translate(-0.1rem, -0.1rem);
     text-shadow: 0.1rem 0.1rem rgba(20, 20, 20, 0.8);
-
 }
 
-/*
-External sources
- */
+/* External source containers */
 .itch_page_embed {
     border-radius: 4px;
     margin-top: -1%;
@@ -356,95 +188,10 @@ External sources
     transform: scale(0.8);
 }
 
-.itch_games_ul_list {
-    list-style-type: none;
-    padding-left: 0rem;
-    line-height: 1.5rem;
-}
-
-.itch_thumb_custom {
-    width: 30vh;
-    height: fit-content;
-    padding: 3vh;
-    margin: 3vh;
-
-    /*
-    border-style: dotted;
-    border-width: 0.3vh;
-     */
-    border-color: black;
-    border-radius: 1vh;
-
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-
-    /*
-        background-color: rgba(241, 214, 179, 0.18);
-
-    overflow: hidden;
-     */
-}
-
-/*
-.itch_thumb_custom_hoverables {
-    transition: all 0.1s ease-in-out;
-}
-
-.itch_thumb_custom_hoverables:hover {
-    transform: scale(1.01);
-}
-
- */
-
-
-.itch_thumb_custom_pic {
-    height: 25vh;
-
-    border-style: solid;
-    border-width: 0.3vh;
-    border-color: black;
-    border-radius: 2vh;
-
-}
-
-
-.itch_thumb_custom_desc {
-    margin-top: 1vh;
-    margin-bottom: -2vh;
-    height: 10vh;
-    width: fit-content;
-    width: -moz-fit-content;
-    word-wrap: break-word;
-
-    line-height: 1.5rem;
-
-    text-align: center;
-
-    font-size: 2.5vh;
-}
-.itch_thumb_custom_title {
-    margin-top: -0.5vh;
-    margin-bottom: 2vh;
-    width: fit-content;
-    width: -moz-fit-content;
-    word-wrap: break-word;
-
-    text-align: center;
-    display: inline-block;
-    vertical-align: text-bottom;
-    line-height: 2rem;
-
-
-    font-size: 4vh;
-}
-
-
-
+/* Resume item container */
 .resume_items_container {
     max-width: 70%;
     min-width: 60%;
-
     display: inline-flex;
     flex-direction: row;
     justify-content: space-between;
@@ -452,67 +199,52 @@ External sources
     flex-flow: wrap;
 }
 
+/* Resume item styling */
 .reg_resume_item {
     padding: 1%;
     line-height: 2rem;
 }
 
-/* width */
+/* Scrollbar styling */
 ::-webkit-scrollbar {
     width: 25px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
     visibility: hidden;
 }
 
-/* Backpart */
 ::-webkit-scrollbar-track-piece {
     background-color: #444460;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
     background: #6767e0;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #4949b2;
 }
 
-
-
-/* The popup form - hidden by default */
+/* Popup form container */
 .email_form {
     display: inline-block;
     position: relative;
-
     width: auto;
     height: 75vh;
     margin: auto;
-
     max-width: 90%;
-
     text-align: center;
-
-
     z-index: 10;
 }
 
-/* Add styles to the form container */
 .form-container {
-
     padding: 10px;
     background-color: white;
-
     border-radius: 10px;
-
 }
 
-/* Full-width input fields */
-.form-container input[type=text]  {
+.form-container input[type=text] {
     width: 80%;
     padding: 15px;
     margin: 5px 0 22px 0;
@@ -537,14 +269,11 @@ External sources
     box-sizing: border-box;
 }
 
-
-/* When the inputs get focus, do something */
 .form-container input[type=text]:focus, .form-container input[type=password]:focus {
     background-color: #ddd;
     outline: none;
 }
 
-/* Set a style for the submit/login button */
 .form-container .btn {
     background-color: #6767e0;
     color: white;
@@ -556,33 +285,26 @@ External sources
     opacity: 0.8;
 }
 
-/* Add some hover effects to buttons */
 .form-container .btn:hover, .open-button:hover {
     opacity: 1;
 }
 
-
 .melt_poem_img {
-
     max-width: 60%;
     max-height: 60%;
-
 }
 
 .melt_poem_top {
-    border-radius: 0.5rem 0.5rem / 0.5rem 0.5rem 0 0
-}
-.melt_poem_bottom {
-    border-radius: 0.5rem 0.5rem / 0 0 0.5rem 0.5rem
+    border-radius: 0.5rem 0.5rem / 0.5rem 0.5rem 0 0;
 }
 
-@media only screen and (max-device-width: 800px){
+.melt_poem_bottom {
+    border-radius: 0.5rem 0.5rem / 0 0 0.5rem 0.5rem;
+}
+
+@media only screen and (max-device-width: 800px) {
     .long_story_text {
         font-size: 95%;
-
-        /*
-        If you're on mobile (in this block), then make the text a bit more narrow; from 80 to 70%
-         */
         width: 70%;
         padding-left: 15%;
     }
