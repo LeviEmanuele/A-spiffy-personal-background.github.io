@@ -1,6 +1,9 @@
-# Human Instrumentality Project (don't sue me.) - a Personal profile for Social scientists 
+# Human Instrumentality Project  
 
 Welcome to my personal profile: https://leviemanuele.github.io/A-spiffy-personal-background.github.io/ 
+
+Showcasing how to make a personal profile, where you be poor social scientists lacking of skills and yearning for integration in the tech world.
+
 
 ## About The Project
 
