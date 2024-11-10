@@ -15,7 +15,8 @@ This project is about me making myself a personal profile, a simple psychologist
 
 ### Why this project?
 
-- **Focus on solving problems**: This project is designed to showcase my tech skills in this Dark Forest (great book, by the way)
+- **Focus on solving problems**: This project is designed to solve the problem of showcasing tech skills in this digital dark forest<sup>(great book, by the way)</sup>
+
 - **Saves time**: Steal this template, scrape it or clone it - even social scientists deserve to survive and thrive on Github
 
 ## Built With
