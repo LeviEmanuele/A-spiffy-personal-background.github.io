@@ -11,7 +11,7 @@ Showcasing how to make a personal profile, where you be poor social scientists l
 
 ## About The Project
 
-This project is about me making myself a personal profile, a simple psychologist. Showcasing how even a simple psychologist can survive the Internet with just an ounce of tech savyiness
+This project is about me making myself a personal profile, a simple psychologist. Showcasing how even a simple psychologist can survive  Internet with just an ounce of tech savyiness<sup>and lack of proper english grammar.<sup>
 
 ### Why this project?
 
