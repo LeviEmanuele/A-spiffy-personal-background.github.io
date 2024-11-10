@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emanuele Levi - Academic Profile</title>
+  <link href="./images/tab-icon2.png" rel="icon"/>
+  <link href="regular_styles.css" rel="stylesheet"/>
+  <link href="dropdown.css" rel="stylesheet"/>
+  <link href="navbar_and_footer_styles.css" rel="stylesheet"/>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+    
+    body {
+      font-family: 'Times', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: white; /* White background */
+      color: #333; /* Dark text for readability */
+    }
+
+    .main-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center; /* Center all content */
+    }
+
+    header {
+      padding: 40px;
+      background-color: #fdf5a1; /* Pastel yellow background */
+      color: #2d3e50;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    .intro-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+
+    .intro-text {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      max-width: 800px; /* Limit width for better readability */
+      margin: 20px 0;
+    }
+
+    .intro-image {
+      border-radius: 50%;
+      margin-top: 20px;
+      width: 200px;
+      height: 200px;
+      overflow: hidden;
+    }
+
+    .intro-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .cta {
+      text-align: center;
+      font-size: 1.2rem;
+      margin: 40px 0;
+    }
+
+    .cta a {
+      color: #2d3e50;
+      text-decoration: none;
+      font-weight: 700;
+      border: 2px solid #2d3e50;
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+
+    .cta a:hover {
+      background-color: #2d3e50;
+      color: white;
+    }
+
+    .content-section {
+      margin-bottom: 40px;
+    }
+
+    .content-section h2 {
+      font-size: 2rem;
+      color: #2d3e50;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .grid-item {
+      background-color: #e6e6e6;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .grid-item a {
+      color: #2d3e50;
+      text-decoration: none;
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+
+    footer {
+      background-color: #a7c7e7; /* Light blue footer */
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: none;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Main content -->
+  <div class="main-container">
+    <!-- Header section -->
+    <header>
+      <h1>Emanuele Levi</h1>
+      <p>Behavioral Economist & Political Psychologist</p>
+    </header>
+
+    <!-- Introduction Section -->
+    <div class="intro-content">
+      <div class="intro-text">
+        <p>
+          Ciao, I'm Emanuele Levi, a Behavioral Economics graduate and Political Psychologist with extensive experience in developing experimental designs and applying political psychology. I completed my MA thesis at Reichman University, focusing on the practical applications of behavioral economics in political behavior. My expertise includes interdisciplinary research, academic writing, and educational outreach.
+        </p>
+        <p>
+          Fluent in three languages, I engage with complex socio-political topics and behavioral insights to better understand human decision-making processes. When I’m not researching, I write academically and leisurely, exploring political themes and societal trends.
+        </p>
+        <p>
+          I am always open to collaboration with academics, researchers, and students interested in behavioral economics and political psychology.
+        </p>
+      </div>
+      <div class="intro-image">
+        <img src="./images/self-picture.jfif" alt="Emanuele Levi"/>
+      </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="cta">
+      <p>For collaborations, inquiries, or more information, feel free to reach out.</p>
+      <a href="contact.html">Contact Me</a>
+    </div>
+
+    <!-- Academic Focus Areas -->
+    <div class="content-section">
+      <h2>Research Interests</h2>
+      <p>
+        My research integrates behavioral economics and political psychology, focusing on understanding how cognitive biases, group dynamics, and social influences affect political decision-making. I am particularly interested in the intersection between economic policies and political behavior, and how individuals' behavior shapes broader societal trends.
+      </p>
+    </div>
+
+    <!-- Publications Section -->
+    <div class="content-section">
+      <h2>Publications & Work</h2>
+      <div class="grid-container">
+        <div class="grid-item">
+          <a href="programming.html">Research Projects</a>
+        </div>
+        <div class="grid-item">
+          <a href="animation.html">Academic Papers</a>
+        </div>
+        <div class="grid-item">
+          <a href="resume.html">CV/Resume</a>
+        </div>
+        <div class="grid-item">
+          <a href="writing.html">Published Writing</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Emanuele Levi - All Rights Reserved | <a href="privacy.html">Privacy Policy</a></p>
+  </footer>
+
+  <!-- Scripts (if needed) -->
+  <script src="external_functions.js"></script>
+  <script src="navbar.js"></script>
+  <script src="footer.js"></script>
+</body>
+</html>
