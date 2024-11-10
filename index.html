@@ -12,11 +12,12 @@
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
     
     body {
-      font-family: 'Times', sans-serif;
+      font-family: 'Roboto', sans-serif;
       margin: 0;
       padding: 0;
       background-color: #E1ECF6; /* Lavender background */
       color: #333; /* Dark text for readability */
+      line-height: 1.7;
     }
 
     .main-container {
@@ -28,17 +29,24 @@
 
     header {
       padding: 40px;
-      background-color: ##C1D2DA; /* Pale Acqua background */
+      background-color: #C1D2DA; /* Pale Acqua background */
       color: #2d3e50;
+      text-align: center;
     }
 
     header h1 {
-      margin: 0;
       font-size: 3rem;
+      margin: 0;
     }
 
     header p {
       font-size: 1.2rem;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
     }
 
     .intro-content {
@@ -51,8 +59,8 @@
 
     .intro-text {
       font-size: 1.1rem;
-      line-height: 1.6;
-      max-width: 800px; /* Limit width for better readability */
+      line-height: 1.8;
+      max-width: 800px;
       margin: 20px 0;
     }
 
@@ -62,6 +70,8 @@
       width: 200px;
       height: 200px;
       overflow: hidden;
+      border: 4px solid #2d3e50;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     }
 
     .intro-image img {
@@ -83,6 +93,7 @@
       border: 2px solid #2d3e50;
       padding: 10px 20px;
       border-radius: 5px;
+      transition: background-color 0.3s ease, color 0.3s ease;
     }
 
     .cta a:hover {
@@ -92,6 +103,9 @@
 
     .content-section {
       margin-bottom: 40px;
+      padding: 20px;
+      background-color: #f7f7f7; /* Light background */
+      border-radius: 8px;
     }
 
     .content-section h2 {
@@ -112,6 +126,7 @@
       border-radius: 8px;
       text-align: center;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, background-color 0.3s ease;
     }
 
     .grid-item a {
@@ -119,6 +134,11 @@
       text-decoration: none;
       font-size: 1.2rem;
       font-weight: 700;
+    }
+
+    .grid-item:hover {
+      transform: scale(1.05);
+      background-color: #d1d1d1;
     }
 
     footer {
@@ -131,8 +151,27 @@
     footer a {
       color: white;
       text-decoration: none;
+      font-weight: 700;
     }
 
+    footer a:hover {
+      color: #2d3e50;
+    }
+
+    @media (max-width: 768px) {
+      .intro-text {
+        font-size: 1rem;
+        max-width: 90%; /* Full-width with padding */
+      }
+
+      .content-section h2 {
+        font-size: 1.5rem;
+      }
+
+      .cta {
+        font-size: 1rem;
+      }
+    }
   </style>
 </head>
 <body>
@@ -147,15 +186,20 @@
 
     <!-- Introduction Section -->
     <div class="intro-content">
-      <div class="intro-text">
+  
         <p>
-          Ciao, I'm Emanuele Levi, a Behavioral Economics graduate and Political Psychologist with extensive experience in developing experimental designs and applying political psychology. I completed my MA thesis at Reichman University, focusing on the practical applications of behavioral economics in political behavior. My expertise includes interdisciplinary research, academic writing, and educational outreach.
+          Ciao, I'm Emanuele Levi, a graduate in Behavioral Economics and Political Psychology, with extensive experience in developing experimental designs and applying political psychology. I completed my MA thesis at Reichman University, where I focused on the practical applications of behavioral economics in political behavior. My expertise includes interdisciplinary research, academic writing, and educational outreach.
         </p>
+      
         <p>
-          I'm fluent in three languages, I engage with complex socio-political topics and behavioral insights to better understand human decision-making processes. When I’m not researching, I write academically and leisurely, exploring political themes and societal trends.
+          Fluent in three languages, I engage with complex socio-political topics and behavioral insights to better understand human decision-making processes. When I’m not researching, I write both academically and leisurely, exploring political themes and societal trends.
         </p>
+      
         <p>
-          I am always open to collaborations or work opportunities!
+          I'm always open to collaborations and work opportunities!
+        </p>
+      </div>
+      
         </p>
       </div>
       <div class="intro-image">
@@ -181,17 +225,19 @@
     <div class="content-section">
       <h2>Publications & Work</h2>
       <div class="grid-container">
-        <div class="grid-item">
-          <a href="programming.html">Research Projects</a>
+      <div class="grid-item">
+          <a href="https://github.com/LeviEmanuele" target="_blank">Research Projects</a>
         </div>
         <div class="grid-item">
-          <a href="animation.html">Academic Papers</a>
+          <a href="https://osf.io/3juv8/wiki/home/" target="_blank">Academic Papers</a>     
+        </div>
+
+        <div class="grid-item">
+            <a href="resume.pdf" target="_blank">CV/Resume</a>
+      
         </div>
         <div class="grid-item">
-          <a href="resume.html">CV/Resume</a>
-        </div>
-        <div class="grid-item">
-          <a href="writing.html">Published Writing</a>
+          <a href="writing.html">Experimental Writing Projects</a>
         </div>
       </div>
     </div>
