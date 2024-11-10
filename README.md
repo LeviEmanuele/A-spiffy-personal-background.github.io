@@ -4,6 +4,10 @@ Welcome to my personal profile: https://leviemanuele.github.io/A-spiffy-personal
 
 Showcasing how to make a personal profile, where you be poor social scientists lacking of skills and yearning for integration in the tech world.
 
+![ophanim](./images/ophanim.gif)
+
+
+
 
 ## About The Project
 
