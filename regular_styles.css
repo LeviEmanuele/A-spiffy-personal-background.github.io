@@ -236,7 +236,15 @@ everything to that it jumped a bit further down but elements kept decently simil
     margin-top: -80px;
 }
 
+.intro-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
 
+}
 
 .intro_pic {
     width: 10vw;
@@ -246,7 +254,7 @@ everything to that it jumped a bit further down but elements kept decently simil
     max-width: 200px;
     max-height: 200px;
     position: relative;
-    
+
     border-radius: 50%;
     object-fit: cover;
     display: block;
