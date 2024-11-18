@@ -1,7 +1,9 @@
 BEGIN:VCARD
 VERSION:3.0
-FN:Emanuele Leonardo Levi
+N:Levi;Emanuele Leonardo
+FN;CHARSET=UTF-8:John Doe
+TEL;TYPE=WORK, VOICE:(050) 482-2148
 ORG: Reichman University of Hertzlyah
-EMAIL: emanuele.levi@post.runi.ac.il
-ADR: Tel Aviv, Israel
+EMAIL;TYPE=INTERNET: emanuele.levi@post.runi.ac.il
+ADR:;;Tel Aviv, Israel
 END:VCARD
