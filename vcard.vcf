@@ -1,8 +1,7 @@
 BEGIN:VCARD
 VERSION:3.0
-FN: Emanuele Leonardo Levi
+FN:Emanuele Leonardo Levi
 ORG: Reichman University of Hertzlyah
-PHOTO:https://imgur.com/a/EnGHOS8
-EMAIL:emanuele.levi@post.runi.ac.il
-ADR:;;Tel Aviv, Israel
+EMAIL: emanuele.levi@post.runi.ac.il
+ADR: Tel Aviv, Israel
 END:VCARD
