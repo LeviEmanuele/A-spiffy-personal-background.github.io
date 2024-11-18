@@ -60,6 +60,18 @@
       resize: vertical;
       height: 150px;
     }
+    input[type="submit"] {
+      padding: 10px 20px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1em;
+    }
+    input[type="submit"]:hover {
+      background-color: #218838;
+    }
   </style>
 </head>
 <body>
@@ -82,4 +94,10 @@
       <form action="submit-form.php" method="POST">
         <input type="text" name="name" placeholder="Your Name" required>
         <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" r
+        <textarea name="message" placeholder="" required></textarea>
+        <input type="submit" value="Press to Send">
+      </form>
+    </section>
+  </main>
+</body>
+</html>
